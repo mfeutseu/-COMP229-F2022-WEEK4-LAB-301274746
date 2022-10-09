@@ -15,8 +15,10 @@ import mongoose from "mongoose";
 
 // Configuration Module
 import { MongoURI, Secret } from "../config/config.js";
+
 // Import Router
 import indexRouter from './routes/index.routes.server.js' 
+import movieRouter from './routes/movies.route.server.js';
 
 
 // intanciate app-server
@@ -47,6 +49,7 @@ app.use(session({
 
 // use Routes 
 app.use('/', indexRouter);
+app.use('/', movieRouter);
 
 // //run app
 // app.listen(3000);

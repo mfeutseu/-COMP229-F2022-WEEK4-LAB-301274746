@@ -1,10 +1,3 @@
-// Index controller 
-
-// custom middleware
-// function helloPlein(req, res, next){
-//     res.setHeader('Content-Type', 'text/plain');
-//     res.end('Hello from NodeJS Application');
-// }
 
 export function displayHomePage(req, res, next){
     res.render('index', {title: 'Home', page:'home'});
